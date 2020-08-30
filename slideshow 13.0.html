@@ -1,0 +1,189 @@
+<html>
+<style>
+#botao1 {
+ position: absolute;
+ z-index:0 ; 
+}
+#botao2{
+ position: absolute;
+ z-index:-2 ; 
+}
+#botao3{
+ position: absolute;
+ z-index:-2 ; 
+}
+
+
+
+
+#botaoesquerda1{
+ position: absolute;
+ z-index:0 ; 
+
+}
+#botaoesquerda2{
+ position: absolute;
+ z-index:-2 ; 
+}
+#botaoesquerda3{
+ position: absolute;
+ z-index:-2 ; 
+}
+
+.caixa {
+display: flex;
+  flex-direction: row;
+
+}
+
+.direita {
+width: 40px; 
+height: 30px
+}
+.esquerda {
+width: 40px;
+height: 30px 
+}
+
+</style>
+<div class="container">
+<div id="imagemum"><img id="imagem1" src="imagem1.png" alt="imagem" width="500" height="200" style=" position: absolute; z-index: -1; "></div>
+<div id="imagemum"><img id="imagem2" src="imagem2.png" alt="imagem" width="500" height="200" style=" position: absolute; z-index: -2; "></div>
+<div id="imagemum"><img id="imagem3" src="imagem3.png" alt="imagem" width="500" height="200" style=" position: absolute; z-index: -2; "></div>
+
+</div>
+
+<script>
+//botões da imagem 1 
+function botao1() {   //baixa o um e seu botões vai sobe  o dois  e seu botões 
+document.getElementById("imagem1").style.zIndex = "-2";
+document.getElementById("imagem2").style.zIndex = "-1"; // 
+document.getElementById("imagem3").style.zIndex = "-2";
+//botões
+// botões da direita 
+document.getElementById("botao1").style.zIndex = "-2"; //
+document.getElementById("botao2").style.zIndex = "-0";  
+document.getElementById("botao3").style.zIndex = "-2";
+
+// botões da esquerda
+document.getElementById("botaoesquerda1").style.zIndex = "-2"; //
+document.getElementById("botaoesquerda2").style.zIndex = "-0"; // 
+document.getElementById("botaoesquerda3").style.zIndex = "-2";
+
+}
+
+function botaoesquerda1() {   //baixa o um vai sobe  o três  e seu botões 
+document.getElementById("imagem1").style.zIndex = "-2";
+document.getElementById("imagem2").style.zIndex = "-2"; // 
+document.getElementById("imagem3").style.zIndex = "-1";
+//botões
+// botões da direita 
+document.getElementById("botao1").style.zIndex = "-2"; //
+document.getElementById("botao2").style.zIndex = "-2";  
+document.getElementById("botao3").style.zIndex = "0";
+
+// botões da esquerda
+document.getElementById("botaoesquerda1").style.zIndex = "-2"; //
+document.getElementById("botaoesquerda2").style.zIndex = "-2"; // 
+document.getElementById("botaoesquerda3").style.zIndex = "0";
+
+}
+//--
+//--
+//---
+//botões da imagem 2 
+function botao2() {   //baixa o dois e vai para o tres  
+document.getElementById("imagem1").style.zIndex = "-2";
+document.getElementById("imagem2").style.zIndex = "-2"; // 
+document.getElementById("imagem3").style.zIndex = "-1";
+//botões
+// botões da direita 
+document.getElementById("botao1").style.zIndex = "-2"; //
+document.getElementById("botao2").style.zIndex = "-2";  
+document.getElementById("botao3").style.zIndex = "0";
+
+// botões da esquerda
+document.getElementById("botaoesquerda1").style.zIndex = "-2"; //
+document.getElementById("botaoesquerda2").style.zIndex = "-2"; // 
+document.getElementById("botaoesquerda3").style.zIndex = "0";
+
+}
+
+function botaoesquerda2() {   //baixa o o dois com seu botões e sobe novamente o um e seus botões 
+document.getElementById("imagem1").style.zIndex = "-1";
+document.getElementById("imagem2").style.zIndex = "-2"; // 
+document.getElementById("imagem3").style.zIndex = "-2";
+//botões
+// botões da direita 
+document.getElementById("botao1").style.zIndex = "0"; //
+document.getElementById("botao2").style.zIndex = "-2";  
+document.getElementById("botao3").style.zIndex = "-2";
+
+// botões da esquerda
+document.getElementById("botaoesquerda1").style.zIndex = "0"; //
+document.getElementById("botaoesquerda2").style.zIndex = "-2"; // 
+document.getElementById("botaoesquerda3").style.zIndex = "-2";
+
+}
+
+//botões da imagem 3 
+  //vai para a um 
+function botao3() {   //baixa o dois e vai para o tres  
+document.getElementById("imagem1").style.zIndex = "-1";
+document.getElementById("imagem2").style.zIndex = "-2"; // 
+document.getElementById("imagem3").style.zIndex = "-2";
+//botões
+// botões da direita 
+document.getElementById("botao1").style.zIndex = "0"; //
+document.getElementById("botao2").style.zIndex = "-2";  
+document.getElementById("botao3").style.zIndex = "-2";
+
+// botões da esquerda
+document.getElementById("botaoesquerda1").style.zIndex = "0"; //
+document.getElementById("botaoesquerda2").style.zIndex = "-2"; // 
+document.getElementById("botaoesquerda3").style.zIndex = "-2";
+
+}
+
+function botaoesquerda3() {   //esse botão volta para o dois 
+document.getElementById("imagem1").style.zIndex = "-2";
+document.getElementById("imagem2").style.zIndex = "-1"; // 
+document.getElementById("imagem3").style.zIndex = "-2";
+//botões
+// botões da direita 
+document.getElementById("botao1").style.zIndex = "-2"; //
+document.getElementById("botao2").style.zIndex = "0";  
+document.getElementById("botao3").style.zIndex = "-2";
+
+// botões da esquerda
+document.getElementById("botaoesquerda1").style.zIndex = "-2"; //
+document.getElementById("botaoesquerda2").style.zIndex = "0"; // 
+document.getElementById("botaoesquerda3").style.zIndex = "-2";
+
+}
+//--
+
+
+
+
+</script>
+<div class="caixa">
+<div class="esquerda">
+<button id="botaoesquerda1" type="button" onclick="botaoesquerda1()"><1</button> 
+<button id="botaoesquerda2" type="button" onclick="botaoesquerda2()"><2</button>   
+<button id="botaoesquerda3" type="button" onclick="botaoesquerda3()"><3</button>    
+    
+</div>
+
+<div class="direita">
+<button id="botao1" type="button" onclick="botao1()">1></button> 
+<button id="botao2" type="button" onclick="botao2()">2></button>   
+<button id="botao3" type="button" onclick="botao3()">3></button>    
+    
+</div>
+
+
+</div>
+
+
+</html>
